@@ -1,0 +1,128 @@
+*{
+     margin: 0; padding: 0; box-sizing: border-box; background: red; 	
+}
+
+header{
+	width: 100%; height: 100vh;
+	background-image: pnt.png;
+	
+}
+nav{
+	width: 100%; height: 15vh;
+	background: green;
+	color: white; display: flex; justify-content: space-between;
+	align-items: center;text-transform: uppercase;
+}
+nav .logo{
+	width: 25%; text-align: center;
+}
+
+
+nav .menu{
+	width: 40%; 
+	display: flex; justify-content: space-between;
+}
+nav .menu a {
+	width: 25%;text-decoration: none;
+	font-weight: bold; color: white;
+}
+
+
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+     color: white;
+}
+
+section .change{
+	animation: change;
+	animation-duration: infinite 10s;
+
+}
+section h3{
+	font-size: 35px; font-weight: 200; letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h2{
+	margin: 30px 0 20px 0;
+	font-size: 45px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+ section a{
+ 	padding: 12px 30px;
+ 	border-radius: 4px;
+ 	outline: none;
+ 	text-transform: uppercase;
+ 	font size: 11px;
+ 	font-weight: 500;
+ 	text-decoration: none;
+ 	letter-spacing: 1px;
+ 	transition: all .5s ease;
+ }
+ section .btnone{
+ 	background: #fff;
+ 	color: #000;
+
+ }
+.btnone:hover{
+background: #00b894;
+ 	color: white;
+ 
+
+}
+
+
+
+
+ section .btntwo{
+ 	background: #00b894;
+ 	color: white;
+ }
+.btntwo:hover{
+background: #fff;
+ 	color: #000;
+
+
+ }
+ @keyframes:.change{
+ 	animation: change;
+
+
+ }
+
+
+
+
+ }.box: before{
+ 	content: '';
+ 	position: absolute;
+ 	top: -2px;
+ 	left: -2px;
+ 	right:-2px;
+    bottom: -2px;
+    background: black;
+    z-index: -1;
+}
+
+
+.box: after{
+ 	content: '';
+ 	position: absolute;
+ 	top: -2px;
+ 	left: -2px;
+ 	right:-2px;
+    bottom: -2px;
+    background: black;
+    z-index: -2;
+    filter: blur(40px);
+}
+.box:before,
+.box:after
+{
+	background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+}
